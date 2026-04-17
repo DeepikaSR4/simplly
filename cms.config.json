@@ -1,0 +1,44 @@
+{
+  "version": "1",
+  "schemaVersion": 1,
+  "projectName": "My Site",
+  "media": {
+    "folder": "public/uploads"
+  },
+  "collections": [
+    {
+      "name": "blog_posts",
+      "label": "Blog Posts",
+      "folder": "content/blog_posts",
+      "format": "json",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "type": "text"
+        },
+        {
+          "name": "read_time",
+          "label": "Read time",
+          "type": "text"
+        },
+        {
+          "name": "content",
+          "label": "Content",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
