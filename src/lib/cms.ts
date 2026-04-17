@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const contentDir = path.join(process.cwd(), 'content', 'blog_posts');
+const contentDir = path.join(process.cwd(), 'content', 'content', 'blog_posts');
 
 export interface BlogPosts {
   _id: string;
@@ -15,7 +15,7 @@ export interface BlogPosts {
 }
 
 /**
- * Reads all blog post entries from content/blog_posts/
+ * Reads all blog post entries from content/content/blog_posts/
  */
 export function getBlogPostsList(): BlogPosts[] {
   if (!fs.existsSync(contentDir)) {
