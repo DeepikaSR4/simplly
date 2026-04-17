@@ -21,12 +21,12 @@ export function InputForm({
   return (
     <div className="w-full max-w-[580px] mx-auto relative px-4 sm:px-0">
       <form onSubmit={onSubmit} className="w-full relative">
-        <div className="relative bg-white rounded-xl border border-border pt-5 pb-3 px-5 transition-all duration-200 focus-within:border-accent focus-within:shadow-[0_0_0_3px_#e0f2fe,0_10px_15px_-3px_rgba(0,0,0,0.05)]">
-          <div className="relative">
+        <div className="relative bg-white rounded-xl border border-border pt-4 sm:pt-5 pb-[0.625rem] sm:pb-3 px-4 sm:px-5 transition-all duration-200 focus-within:border-accent focus-within:shadow-[0_0_0_3px_#e0f2fe,0_10px_15px_-3px_rgba(0,0,0,0.05)]">
+          <div className="relative h-14 flex items-center mt-1 text-center justify-center">
             <input
               type="text"
               autoComplete="off"
-              className="w-full border-none outline-none font-sans text-base text-text-primary bg-transparent pt-1 pb-2 leading-relaxed peer"
+              className="w-full h-full absolute inset-0 border-none outline-none font-sans text-[1.0625rem] text-text-primary bg-transparent leading-relaxed peer pt-4 text-center"
               placeholder=" "
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
@@ -37,14 +37,14 @@ export function InputForm({
             />
             <label 
               htmlFor="topicInput" 
-              className="absolute left-0 top-1 text-[0.875rem] text-text-muted pointer-events-none transition-all duration-200 origin-top-left peer-focus:-translate-y-[1.1rem] peer-focus:scale-[0.8] peer-focus:text-accent peer-not-placeholder-shown:-translate-y-[1.1rem] peer-not-placeholder-shown:scale-[0.8] peer-not-placeholder-shown:text-accent"
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-text-muted pointer-events-none transition-all duration-300 origin-top peer-focus:top-0 peer-focus:-translate-y-1 peer-focus:scale-[0.85] peer-focus:text-accent peer-not-placeholder-shown:top-0 peer-not-placeholder-shown:-translate-y-1 peer-not-placeholder-shown:scale-[0.85] peer-not-placeholder-shown:text-accent whitespace-nowrap"
             >
               What do you want to understand?
             </label>
           </div>
 
-          <div className="flex justify-between items-center mt-3 pt-3 border-t border-border">
-            <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row justify-between items-center mt-3 pt-3 border-t border-border gap-4 sm:gap-2">
+            <div className="flex gap-1 sm:gap-2">
               {(["eli5", "beginner", "detailed"] as const).map((l) => {
                 const active = level === l;
                 return (
@@ -53,7 +53,7 @@ export function InputForm({
                     type="button"
                     onClick={() => setLevel(l)}
                     disabled={loading}
-                    className={`px-[0.875rem] py-[0.375rem] rounded-full text-xs font-medium border transition-all duration-200 font-sans cursor-pointer ${
+                    className={`px-2.5 sm:px-[0.875rem] py-1 sm:py-[0.375rem] rounded-full text-[11px] sm:text-xs font-medium border transition-all duration-200 font-sans cursor-pointer whitespace-nowrap ${
                       active 
                         ? 'text-accent bg-accent-soft border-accent/20' 
                         : 'bg-transparent border-transparent text-text-muted hover:bg-bg-secondary hover:text-text-secondary'
@@ -79,7 +79,7 @@ export function InputForm({
               <button
                 type="submit"
                 disabled={loading || topic.trim().length < 3}
-                className="px-5 py-2 rounded-lg border-none bg-text-primary text-white font-sans text-[0.8125rem] font-medium cursor-pointer flex items-center gap-2 transition-all duration-200 hover:bg-accent hover:-translate-y-[1px] disabled:opacity-50 disabled:hover:bg-text-primary disabled:hover:translate-y-0"
+                className="px-4 sm:px-5 py-[0.4375rem] sm:py-2 rounded-lg border-none bg-text-primary text-white font-sans text-[13px] font-medium cursor-pointer flex items-center gap-1.5 sm:gap-2 transition-all duration-200 hover:bg-accent hover:-translate-y-[1px] disabled:opacity-50 disabled:hover:bg-text-primary disabled:hover:translate-y-0"
               >
                 <span>Simplify</span>
                 {loading ? (

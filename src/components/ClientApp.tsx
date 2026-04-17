@@ -84,7 +84,7 @@ export default function ClientApp({ initialBlogs }: { initialBlogs: BlogEntry[] 
       <span onClick={() => navigate('home')} className="font-crimson text-[1.5rem] font-semibold text-text-primary tracking-tight transition-opacity hover:opacity-80 cursor-pointer">
         Simplly
       </span>
-      <div className="flex gap-8 items-center">
+      <div className="flex gap-4 sm:gap-8 items-center">
         <span onClick={() => navigate('about')} className="text-sm text-text-secondary hover:text-text-primary transition-colors cursor-pointer">About</span>
         <span onClick={() => navigate('blog')} className="text-sm text-text-secondary hover:text-text-primary transition-colors cursor-pointer">Blog</span>
       </div>
@@ -96,7 +96,7 @@ export default function ClientApp({ initialBlogs }: { initialBlogs: BlogEntry[] 
        <a href="https://buymeacoffee.com/deepikasr" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-text-secondary transition-colors hover:text-accent mb-6 cursor-pointer no-underline">
          Support Simplly ☕
        </a>
-       <div className="flex justify-center gap-6 mb-5">
+       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-5">
          <span onClick={() => navigate('about')} className="text-[13px] text-text-muted hover:text-text-primary transition-colors cursor-pointer">About</span>
          <span onClick={() => navigate('blog')} className="text-[13px] text-text-muted hover:text-text-primary transition-colors cursor-pointer">Blog</span>
          <span onClick={() => navigate('privacy')} className="text-[13px] text-text-muted hover:text-text-primary transition-colors cursor-pointer">Privacy</span>

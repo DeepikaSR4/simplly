@@ -1,0 +1,10 @@
+{
+  "_id": "feynman-technique",
+  "_createdAt": "2024-04-17T11:00:00Z",
+  "_updatedAt": "2024-04-17T11:00:00Z",
+  "title": "Feynman Technique Reimagined",
+  "description": "Modern tools for an ancient method.",
+  "category": "Methodology",
+  "readTime": "8 min read",
+  "content": "<h3 class=\"font-sans text-xs font-semibold uppercase tracking-[0.15em] text-accent mt-8 mb-3\">Methodology</h3>\n<p class=\"mb-6\">The Feynman technique involves teaching a concept to a child. By forcing yourself to explain things without jargon, you quickly identify the gaps in your own understanding.</p>\n<p class=\"mb-6\">Modern tools allow us to instantly scale this technique. You can provide your complex notes and ask AI to translate it into an ELI5 framework, instantly giving you a mirror of your own knowledge base.</p>"
+}
