@@ -8,7 +8,7 @@
   "collections": [
     {
       "name": "blog_posts",
-      "label": "Blog posts",
+      "label": "Blog Posts",
       "folder": "content/blog_posts",
       "format": "json",
       "fields": [
@@ -17,6 +17,21 @@
           "label": "Title",
           "type": "text",
           "required": true
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "type": "text"
+        },
+        {
+          "name": "read_time",
+          "label": "Read time",
+          "type": "text"
         },
         {
           "name": "content",
