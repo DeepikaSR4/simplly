@@ -1,0 +1,29 @@
+{
+  "version": "1",
+  "schemaVersion": 1,
+  "projectName": "My Site",
+  "media": {
+    "folder": "public/uploads"
+  },
+  "collections": [
+    {
+      "name": "blog_posts",
+      "label": "Blog posts",
+      "folder": "content/blog_posts",
+      "format": "json",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "content",
+          "label": "Content",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
